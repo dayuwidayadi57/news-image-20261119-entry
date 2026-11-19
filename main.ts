@@ -1,12 +1,14 @@
-// news-image-20261119 entry: "The World Today" — a newspaper-front-page
-// poster summing up Thursday 19 November 2026 in one image (42 stories,
-// 6 continents, one day). Three heroes lead (the Shenzhen trilateral, the
-// Gulf war widening, the Kerch span falling), twelve featured stories
-// follow in consensus order, 27 more sit in ALSO ON, and a world map pins
-// every story to where it happened. The poster is drawn programmatically
-// (Python PIL) so every headline is perfectly legible; this program only
-// copies the finished image beside it to the grader's output directory,
-// deterministically, byte for byte.
+// news-image-20261119 entry (round 2): "The World in One Day — Thursday
+// 19 November 2026" — a newspaper-front-page poster summing up Thursday
+// 19 November 2026 in one image (42 stories, 6 continents, one day).
+// Three heroes lead in the day's consensus order (the Shenzhen
+// trilateral, the GTA VI launch, the record Anthropic IPO), twelve
+// featured stories follow, 27 more sit in ALSO ON, a DATE CHECK box names
+// the big stories left out because they were first reported on
+// 18 November, and a world map pins every story to where it happened.
+// The poster is drawn programmatically (Python PIL) so every headline is
+// perfectly legible; this program only copies the finished image beside
+// it to the grader's output directory, deterministically, byte for byte.
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
